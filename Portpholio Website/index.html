@@ -1,11 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My POrtpholio</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anuraj Website</title>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- FAVICON -->
+  <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/favicon-32x32.png">
+
+  <!-- Google material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/png" href="images/png8.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,800&family=Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/{{YOUR KIT KEY}}.js" crossorigin="anonymous"></script>
+
+  <!-- TYPE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- jQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- EMAIL JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("{{YOUR USER KEY}}");
+    })();
+  </script>
+
 </head>
+
 <body>
-    
+  <nav class="navbar">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <div class="max-width">
+      <div class="logo">
+        <a href="#">My<span> Website</span></a>
+      </div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#services" class="menu-btn">Services</a></li>
+        <li><a href="#skills" class="menu-btn">Skills</a></li>
+        <li><a href="#contact" class="menu-btn">Contact</a></li>
+        <li><a href="#projects" class="menu-btn">Projects</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="material-icons">menu</i>
+      </div>
+    </div>
+  </nav>
+  <!-- Scroll to top button -->
+  <button id="btnScrollToTop">
+    <i class="material-icons">arrow_upward</i>
+  </button>
+
+  <!-- home section start-->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1" data-aos="fade-up">Hello, my name is</div>
+        <div class="text-2">Anuraj</div>
+        <div class="text-3">Im a <span class="typing"></span></div>
+        <div class="images">
+          <img src="images/png8.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- about section -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">About Me</h2>
+      <div class="about-content">
+        <div class="column left" data-aos="fade-right">
+          <img src="images/profile4.jpg" alt="" />
+        </div>
+        <div class="column right" data-aos="fade-up">
+          <div class="text">
+            I'm Anuraj and Im a <span class="typing-2"></span>
+          </div>
+          <p class="paragraph">
+            Throughout my academic journey, I have gained proficiency in programming languages such as C++, Java, and
+            Python, enabling me to design and implement efficient algorithms and software applications. My coursework
+            has also equipped me with a solid understanding of computer architecture, digital systems design, and
+            embedded systems, empowering me to analyze and optimize hardware components for optimal performance.
+          </p>
+          <a href="{{GOOGLE DRIVE LINK FOR RESUME}}">Download
+            Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">My Services</h2>
+      <div class="serv-content">
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-laptop-code"></i>
+            <div class="text">Frontend Website Design</div>
+            <p>
+              🎨✨ Welcome to our Frontend Website Design Service! 🌐💻 Let's turn your ideas into pixel-perfect reality!
+              🖼️✨ Our team of skilled designers and developers is here to craft stunning, user-friendly websites
+              tailored just for you. 🎉💡 Whether it's a sleek modern design or a vibrant, creative interface you're
+              after, we've got you covered! 🌟🚀 Let's collaborate and bring your vision to life! 🤝💫
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-code"></i>
+            <div class="text">Photo Editing</div>
+            <p>
+              📸✨ Welcome to our Photo Editing Service! 🎨🖼️ Let us transform your images into works of art! 🖌️💫 Our
+              skilled editors specialize in enhancing, retouching, and perfecting every detail to make your photos
+              shine! 🌟🖼️ Whether it's for personal memories or professional projects, we'll make your images pop! 🌈📸
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="text">Video Editing</div>
+            <p>
+              🎥✂️ Lights, Camera, Edit! Welcome to our Video Editing Service! 🎬✨ Let us bring your stories to life!
+              🌟🎞️ Our talented editors craft compelling narratives, seamless transitions, and captivating effects to
+              make your videos stand out! 🌠📽️ From vlogs to promotional content, we'll make sure your message shines
+              through! 🚀🎥
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="text">Custom Website Development</div>
+            <p>
+              🌐💻 Welcome to our Web Development Service! 🚀🔧 Let's build your digital presence! 🌟🌐 Our expert
+              developers create responsive, user-friendly websites that are both visually stunning and functionally
+              robust! 💫🖥️ Whether it's a sleek corporate site or an engaging e-commerce platform, we'll bring your
+              ideas to the web! 🛠️🌐
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- skills section services -->
+  <section class="skills" id="skills">
+    <div class="max-width" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">My Skills</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">
+            My creative skills & experiences.
+          </div>
+
+          <p class="paragraph-2">
+            🌐💻 As a web developer, I bring a toolbox full of skills! 💡🛠️ My expertise includes HTML (🔤), CSS (🎨),
+            and JavaScript (💫), enabling me to craft visually stunning and interactive websites. 🖥️🚀 With experience
+            in frameworks like React (⚛️) and Angular (🅰️), I create dynamic user experiences. 🌟🌐 My backend
+            proficiency spans languages such as Node.js (🌳) and databases like SQL (📊). 💻🔧 Plus, I'm adept at
+            version control (🔄) and responsive design (📱) to ensure seamless functionality across devices. 🌈✨
+          </p>
+          <a href="#about">Read More</a>
+        </div>
+        <div class="column right skill-box">
+          <div class="icons">
+            <img src="images\skill-icons\icons8-css3.svg" alt="css" id="css-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-javascript.svg" alt="js" id="js-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-react-native.svg" alt="react" id="react-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-flutter.svg" alt="flutter" id="flutter-icon" data-aos="flip-left">
+            <a target="_blank"><i class="fab fa-java"></i></a>
+            <a target="_blank"><i class="fab fa-git"></i></a>
+
+          </div>
+          <div class="icons">
+            <img src="images\skill-icons\icons8-html-5.svg" alt="html" , id="html-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs" id="nodejs-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" id="vscode-icon"
+              data-aos="flip-left">
+            <img src="images\skill-icons\icons8-c++.svg" alt="c++" id="cpp-icon" data-aos="flip-left">
+            <a target="_blank"><i class="fab fa-python"></i></a>
+            <a target="_blank"><i class="fab fa-github"></i></a>
+
+          </div>
+  </section>
+  <hr>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">Contact Me</h2>
+      <div class="contact-content">
+        <div class="column left" data-aos="flip-left">
+          <div class="text">Let's Get in Touch</div>
+          <p class="paragraph-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium autem voluptas
+            fugit voluptatibus deleniti quia culpa commodi, ipsum nulla modi.
+          </p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub-title">Anuraj Venkatpurwar</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Address</div>
+                <div class="sub-title">At Post Pune</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title">anurajvenkatpurwar@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right" data-aos="flip-right">
+          <div class="text">
+            Message Me
+          </div>
+          <form action="#Contact">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" id="fromName" placeholder="Name" required autocomplete="off">
+              </div>
+              <div class="field email">
+                <input type="email" id="emailSender" placeholder="Email" required autocomplete="off">
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" id="subjectSender" placeholder="Subject" required autocomplete="off">
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" id="message" placeholder="Message" required autocomplete="off"></textarea>
+            </div>
+            <div class="button">
+              <button onclick='sendMail()' type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <hr>
+
+  <section class="projects">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">My Projects</h2>
+      <div class="serv-content">
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-laptop-code"></i>
+            <div class="text">Project 1) <span><a href="https://github.com/Anuraj4/Frontend-Projects">Frontend
+                  Projects</a></span></div>
+            <p>
+              It is a github repository which contains all my frontend projects. In this there will be lot of projects
+              Which I am making in my journey.
+            </p>
+          </div>
+        </div>
+        <div>
+
+        </div>
+        <hr>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-code"></i>
+            <div class="text">Project 2) <span><a href="https://github.com/Anuraj4/Full-Stack-Projects">Full Stack
+                  Projects</a></span></div>
+            <p>
+              It is also a github repository which contains my full stack projects.
+            </p>
+          </div>
+        </div>
+        <hr>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="text">Project 3) <span><a href="https://github.com/Anuraj4/Oasis-Infobyte">Internship
+                  Projects</a></span></div>
+            <p>
+              In this there was Internship projects which I made during my internship journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- footer section start -->
+  <footer>
+    <div class="text-center">
+      <span>
+        Created By <a href="#">Anuraj Venkatpurwar</a> | <span class="far fa-copyright"> </span>
+        <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        <div>
+          <a href="https://www.linkedin.com/in/anuraj-venkatpurwar/" target="_blank"><i
+              class="fab fa-linkedin"></i></i></a>
+          <a href="https://github.com/Anuraj4" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/channel/UCCEbpScXk61QhUB_wHOcm6A" target="_blank"><i
+              class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com/Anurajvenkatpur" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/a_n_u_r_a_j_70/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({ easing: 'ease-in', delay: 100, duration: 300, offset: 100 }); window.addEventListener('load', AOS.refresh);</script>
 </body>
+
 </html>
