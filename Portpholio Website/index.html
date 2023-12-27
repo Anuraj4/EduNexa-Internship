@@ -47,6 +47,14 @@
       emailjs.init("{{YOUR USER KEY}}");
     })();
   </script>
+  <script>
+    function showAlert() {
+      alert("This link is only for recruiters.");
+    }
+  </script>
+
+
+
 
 </head>
 
@@ -65,7 +73,7 @@
         <li><a href="#services" class="menu-btn">Services</a></li>
         <li><a href="#skills" class="menu-btn">Skills</a></li>
         <li><a href="#contact" class="menu-btn">Contact</a></li>
-        <li><a href="#projects" class="menu-btn">Projects</a></li>
+        <li><a href="#projects" class="menu-btn">Web Projects</a></li>
       </ul>
       <div class="menu-btn">
         <i class="material-icons">menu</i>
@@ -110,7 +118,7 @@
             has also equipped me with a solid understanding of computer architecture, digital systems design, and
             embedded systems, empowering me to analyze and optimize hardware components for optimal performance.
           </p>
-          <a href="{{GOOGLE DRIVE LINK FOR RESUME}}">Download
+          <a onclick="showAlert()" id="demo">Download
             Resume</a>
         </div>
       </div>
@@ -172,6 +180,30 @@
             </p>
           </div>
         </div>
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="text">Graphic Designer</div>
+            <p>
+              Welcome to my creative realm! 🎨✨ I'm a passionate graphic designer 🖥️🌟 specializing in visual
+              storytelling 📸🔲. Dive into my digital canvas and explore a world of captivating designs, vibrant colors
+              🌈, and pixel-perfect creations 🖌️🔍. From logos to illustrations, let my portfolio speak the language of
+              innovation and artistic finesse! 🌟💡✨
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="text">Figma Designer</div>
+            <p>
+              🎨🌟 Welcome to my Figma playground! As a design virtuoso, I sculpt user experiences with pixel-perfect
+              precision. 🖥️✨ Dive into my world of interface magic, where every wireframe and prototype tells a
+              compelling story 📐🔲. Explore the fusion of creativity and functionality through my designs, meticulously
+              crafted for a seamless digital journey! 🌈🔍💡
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -216,8 +248,46 @@
             <a target="_blank"><i class="fab fa-github"></i></a>
 
           </div>
+        </div>
   </section>
   <hr>
+  <section class="skills" id="skills">
+    <div class="max-width" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">Competitive Programming</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">
+            My competitive programming platforms
+          </div>
+
+          <p class="paragraph-2">
+            🏆💻 Engage in thrilling coding challenges on platforms like LeetCode, CodeChef, and CodeStudio! Explore a
+            multitude of contests, sharpen your problem-solving skills, and compete against top-notch programmers
+            worldwide. Dive into algorithmic puzzles, refine your coding finesse, and join the vibrant community of
+            passionate coders! 🌟🚀
+          </p>
+          <a href="#about">Read More</a>
+        </div>
+        <div class="column right skill-box">
+          <div class="icons">
+            <a href="https://www.codechef.com/users/anuraj4" target="_blank"><img
+                src="https://cdn.codechef.com/images/cc-logo-mobile.svg" alt="codechef" id="codechef-icon"
+                data-aos="flip-left"></a>
+            <a href="https://leetcode.com/anuraj3690/" target="_blank"><img class="simp-avatar__mRN_"
+                src="https://assets.leetcode.com/users/leetcode/avatar_1568224780.png" alt="LeetCode"
+                data-has-link="true" style="height: 32px; width: 32px;"></a>
+            <a href="https://www.codingninjas.com/studio/profile/anuraj44" target="_blank"><img
+                _ngcontent-serverapp-c117="" id="app-header-logo" alt="Coding Ninjas Studio"
+                src="https://files.codingninjas.in/codingninjs-mob-29500.svg" class="cn-logo-main-mobile"></a>
+            <a href="https://github.com/Anuraj4" target="_blank"><i class="fab fa-github"></i></a>
+
+
+          </div>
+
+        </div>
+  </section>
+  <hr>
+
   <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="max-width">
@@ -282,7 +352,7 @@
   </section>
   <hr>
 
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="max-width">
       <h2 class="title" data-aos="fade-down">My Projects</h2>
       <div class="serv-content">
